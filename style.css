@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #e4e4e4;
+    min-height: 100vh;
+}
+
+header {
+    background: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 6px 6px 10px 0px rgb(207, 203, 203);
+    top: 0;
+    position: sticky;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: tomato;
+    border-bottom: 1px solid red;
+    font-size: 23px;
+    letter-spacing: 1px;
+    transition: all .2s linear;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: rgb(89, 0, 255);
+    border: none;
+}
+
+.ul {
+    display: flex;
+    padding: 10px;
+}
+
+.ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+.ul li a {
+    text-decoration: none;
+    color: tomato;
+    border-bottom: 1px dotted rgb(89, 0, 255);
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+.ul li a:hover {
+    color: rgb(89, 0, 255);
+    border: none;
+}
+
+
+.title {
+    color: red;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    /* border-top: 1px solid orange;
+    border-bottom: 1px solid orange; */
+}
+
+
+input[type=url] {
+    width: 65vw;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    font-size: 17px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 8px 8px 15px 0 rgb(197, 197, 197);
+}
+
+select {
+    width: 65vw;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    font-size: 17px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 8px 8px 15px 0 rgb(197, 197, 197);
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 5px auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 65vw;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: darkorange;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid black;
+    transition: all .2s linear;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: black;
+    box-shadow: 8px 8px 15px 0 rgb(197, 197, 197);
+
+}
+footer{
+    background: rgb(207, 203, 203);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    height: auto;
+    margin-top: 5%;
+    padding: 20px !important;
+    box-shadow: -1px -1px 4px 0 darkorange;
+}
+
+footer a {
+    color: rgb(89, 0, 255);
+    transition: all .3s linear;
+}
+
+footer a:hover {
+    color: black;
+}
+footer p{
+    padding: 10px;
+}
+.blogs{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: -30px auto 0 auto;
+}
+.bn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 10px auto;
+}
+
+.down{
+    color: rgb(55, 0, 255);
+}
+.down:hover{
+    color: tomato;
+}
+
+
+@media (max-width: 541px) {
+    header .logo a {
+        border: none;
+    }
+}
+
+@media (max-width:355px) {
+    header {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

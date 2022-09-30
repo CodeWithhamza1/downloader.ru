@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Downloader | Download Videos, songs, 4k, 8k | CodeWithHamza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="youtube_icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Youtube <span class="down">Video</span> Downloader</a>
+        </div>
+        <nav>
+            <ul class="ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://codewithhamza1.github.io/codewithhamza.com/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="title"> Youtube <span class="down">Downloader</span> </div>
+            <div class="link-container">
+                <label for="url">Enter URL Here 👇</label>
+                <input class="link" type="url" name="url" id="url" title="Enter Your URL Here" placeholder="Your URL Here....">
+            </div>
+            <div class="select-container">
+                <label for="select">Choose Your Quality 👇</label>
+                <select class="format" name="select" id="select" title="Select your quality">
+                    <option disabled selected>Select Your Quality</option>
+                    <option value="mp3">mp3</option>
+                    <option value="mp4a">144p</option>
+                    <option value="280">280p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p</option>
+                    <option value="1080">1080p</option>
+                    <option value="4k">4k</option>
+                    <option value="8k">8k</option>
+                </select>
+            </div>
+            <span class="bn">Download Here 👇</span>
+            <div class="button">
+                <button class="btn">Download</button>
+            </div>
+    </main>
+    <footer>
+       <div class="footer">
+        <p>Copyright &copy; 2020-<script> document.write(new Date().getFullYear()) </script> | Youtube Video Downloader | <a href="https://codewithhamza1.github.io/codewithhamza.com/">CodeWithHamza</a> | all rights reserved </p>
+       </div>
+        <div class="blogs">
+            <p>View Our Blogs at <a href="https://codewithhamza12.blogspot.com/">Code With Hamza</a></p>
+        </div>
+    </footer>
+</body>
+
+
+
+        <script>
+
+            $(".btn").click(function(){
+                var link = $(".link").val();
+                var format = $(".format").children("option:selected").val();
+                var sec = "" + link + "-" + format + "";
+                download(link, format);
+            });
+            function download(link, format){
+                $('.button').html('<iframe style="height:50px; border:none; overflow:hidden;" src="https://loader.to/api/button/?url='+ link + '&f=' + format + '"></iframe>');
+            }
+            
+        </script>
+
+
+
+</html>
