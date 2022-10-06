@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download Any video exist on internet very easily, fast & without any ads | Code With Hamza | YouTube Downloader | Video Downloader">
-  <meta name="keywords" content="Youtube, Downloader, video downloader, download, youtube downloader">
-  <meta name="author" content="CodeWithHamza">
-    <meta name="google-site-verification" content="oZ8ERhgOVc4Oc87JKD3IE2Smy1-Q5n8lJ-NFsPeSMsA" />
+    <title>Youtube Video Downloader | Download Videos, songs, 4k, 8k | CodeWithHamza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="youtube_icon.png" type="image/png">
+     <meta name="google-site-verification" content="oZ8ERhgOVc4Oc87JKD3IE2Smy1-Q5n8lJ-NFsPeSMsA" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPKY2X3FYC"></script>
 <script>
@@ -17,15 +17,12 @@
 
   gtag('config', 'G-FPKY2X3FYC');
 </script>
-    <title>Youtube Video Downloader | Download Videos, songs, 4k, 8k | CodeWithHamza</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="youtube_icon.png" type="image/png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">Internet <span class="down">Video</span> Downloader</a>
+            <a href="index.html">Youtube <span class="down">Video</span> Downloader</a>
         </div>
         <nav>
             <ul class="ul">
@@ -35,8 +32,7 @@
         </nav>
     </header>
     <main>
-            <div class="title"> Video <span class="down">Downloader</span> </div>
-        <div class="fullinfo"><p class="fullinfop">Download All Videos Exist On Internet</p></div>
+            <div class="title"> Youtube <span class="down">Downloader</span> </div>
             <div class="link-container">
                 <label for="url">Enter URL Here 👇</label>
                 <input class="link" type="url" name="url" id="url" title="Enter Your URL Here" placeholder="Your URL Here....">
@@ -46,6 +42,8 @@
                 <select class="format" name="select" id="select" title="Select your quality">
                     <option disabled selected>Select Your Quality</option>
                     <option value="mp3">mp3</option>
+                    <option value="144">144p</option>
+                    <option value="240">240p</option>
                     <option value="360">360p</option>
                     <option value="480">480p</option>
                     <option value="720">720p</option>
@@ -56,7 +54,7 @@
             </div>
             <span class="bn">Download Here 👇</span>
             <div class="button">
-                <button class="btn">Download</button>
+                <button id="button" class="btn">Download</button>
             </div>
     </main>
     <footer>
@@ -68,17 +66,6 @@
         </div>
     </footer>
 </body>
-    <style>
-        .fullinfo{
-        margin: 10px auto;
-        display: flex;
-        justify-content: center;
-        align-item: center;
-        }
-        .fullinfop{
-        text-align: center;
-        }
-        <style>
 
 
 
